@@ -14,6 +14,8 @@ Now the app retuned the HTML text only as a string and then the app runs a loop 
 
 Finally after a few checks in the loop the current days load-shedding times are returned. also within the loop it is possible to compare times and trigger a shutdown 5 minutes before load-shedding like in my example.
 
+The loop also ignores negative times because they are pas load-shedding times.
+
 Please note that the app uses the computer time where the app is running... so if this is wrong the the results can be wrong. 
 
 Also if you check the API `GetScheduleM` endpoint in large time frames it's possible that the app will fail to send you an alert in time because the time fram overshadows the load-shedding start time. 
