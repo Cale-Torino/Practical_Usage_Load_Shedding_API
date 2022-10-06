@@ -114,7 +114,7 @@ static void GetTimes(string Stage)
                     string[] time = RemoveWhitespace(i).Split('-', StringSplitOptions.RemoveEmptyEntries);
                     DateTime endTime = Convert.ToDateTime(time[0]);
                     TimeSpan span = endTime.Subtract(startTime);
-                    TimeSpan toWarning = new TimeSpan(0, 5, 0);//set time here
+                    TimeSpan toWarning = new TimeSpan(0, 5, 0);//set time here//5 min example
                     if (span >= TimeSpan.Zero && span <= toWarning)
                     {
                         //send shutdown command
