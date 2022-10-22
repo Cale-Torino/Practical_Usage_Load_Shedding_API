@@ -2,7 +2,7 @@
 
 [<img src="img/csx.jpg" width="500"/>](img/csx.jpg)
 
-In this repository you can find the Fan_shutdown example app which is a practicaly example of how to use the loadshedding api to shutdown a fan 5 mins before the loadshedding time.
+In this repository you can find the Fan_shutdown example app which is a practical example of how to use the loadshedding api to shutdown a fan 5 mins before the loadshedding time.
 
 ### Description:
 
@@ -12,7 +12,7 @@ After this the app calls `GetScheduleM` endpoint `http://loadshedding.eskom.co.z
 
 Now the app retuned the HTML text only as a string and then the app runs a loop to process this information. 
 
-Finally after a few checks in the loop the current days load-shedding times are returned. also within the loop it is possible to compare times and trigger a shutdown 5 minutes before load-shedding like in my example.
+Finally after a few checks in the loop the current days load-shedding times are returned. Also within the loop it is possible to compare times and trigger a shutdown 5 minutes before load-shedding like in my example.
 
 The loop also ignores negative times because they are past load-shedding times.
 
