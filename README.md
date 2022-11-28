@@ -18,7 +18,7 @@ The loop also ignores negative times because they are past load-shedding times.
 
 Please note that the app uses the computer time where the app is running... so if this is wrong the the results can be wrong. 
 
-Also if you check the API `GetScheduleM` endpoint in large time frames it's possible that the app will fail to send you an alert in time because the time fram overshadows the load-shedding start time. 
+Also if you check the API `GetScheduleM` endpoint in large time frames it's possible that the app will fail to send you an alert in time because the time frame overshadows the load-shedding start time. 
 
 An easy fix is to start the app on the hour such as at **9:00am** and then set your **`toWarning`** time to a few minutes like 30 minutes, 10 minutes or 5 minutes.
 
